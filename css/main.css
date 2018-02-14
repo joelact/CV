@@ -1,0 +1,24 @@
+#header{
+    padding-bottom: 10%;
+}
+
+
+.btn-color{
+    color: black;
+}
+
+.text-format{
+    text-align: center;
+}
+
+.header-img{
+    height: 100%;
+    background-color: dodgerblue;
+    background-size: cover;
+    background-position: center center;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
