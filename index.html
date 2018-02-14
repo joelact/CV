@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <div class="collapse navbar-collapse" id="myCont">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link">About me</a>
+                    <a class="nav-link scroll" href="#aboutMe">About me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link">Skills</a>
@@ -33,7 +34,7 @@
             </ul>
         </div>
     </nav>
-    <header class="header-img text-format d-flex">
+    <header class="header-img text-format d-flex responsive">
         <div class="container my-auto">
             <div class="row">
                 <div class="col-lg-12 mx-auto">
@@ -42,25 +43,36 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 mx-auto">
-                    <button type="button" class="btn btn-dark" src="#aboutMe">About me</button>
+                    <button type="button" class="btn btn-dark" id="no-padding">
+                        <a id="links" href="#aboutMe">About me</a>
+                    </button>
                 </div>
             </div>
         </div>
     </header>
+    <div class="space"></div>
     <div id="aboutMe" class="container">
         <div class="row">
-            <div class="col">
-                
+            <div class="col-lg-4">
+                <img id="profile" class="responsive" src="img/linkedin_profile.jpg" alt="Profile">
+            </div>
+            <div class="col-lg-8">
+                <h3>About Me</h3>
+                <p>Some Text</p>
             </div>
         </div>
     </div>
+    <div class="space"></div>
+    <div class="container">
 
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src=""></script>
 </body>
 
 </html>
