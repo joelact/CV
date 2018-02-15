@@ -27,10 +27,8 @@
     max-height: 100%;
 }
 
-.box-skill{
-    height: 200px;
-    width: 200px;
-    background-color: dodgerblue;
+#footer{
+    padding-top: 2%;
 }
 
 .space{
@@ -46,6 +44,13 @@
     background-color: dodgerblue;
     background-size: cover;
     background-position: center center;
+}
+
+.footer-img{
+    height: 30%;
+    background-size: cover;
+    background-position: center;
+    background-color: #454140;
 }
 
 body, html{
