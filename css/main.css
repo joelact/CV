@@ -29,6 +29,22 @@
 
 #footer{
     padding-top: 2%;
+    color: white;
+}
+
+@media (max-width: 576px){
+    .margin-sm{
+        margin-bottom: 20px;
+    }
+}
+
+.hr-footer{
+    background-color: white;
+}
+
+.footer-h6{
+    color: white;
+    text-align: center;
 }
 
 .space{
@@ -50,7 +66,7 @@
     height: 30%;
     background-size: cover;
     background-position: center;
-    background-color: #454140;
+    background-color:#131313;
 }
 
 body, html{
