@@ -32,6 +32,12 @@
     color: white;
 }
 
+.square{
+    position: relative;
+    height: 250px;
+    width: 250px;
+}
+
 @media (max-width: 576px){
     .margin-sm{
         margin-bottom: 20px;
