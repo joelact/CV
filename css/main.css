@@ -3,6 +3,17 @@
     font-size: 75px;
 }
 
+#isep{
+    max-width: 50px;
+    max-height: 50px;
+    margin: 10px;
+}
+
+#degree{
+    color: black;
+    font-size: 14px;
+}
+
 #no-padding{
     width: 110px;
     height: 35px;
@@ -60,6 +71,15 @@
 
 .text-format{
     text-align: center;
+}
+
+.list{
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 18px;
+    color: #3490DC;
 }
 
 .header-img{
