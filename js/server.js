@@ -22,7 +22,6 @@ function validateStatus(status){
     return status;
 }
 
-
 app.get('/', (req, res) => {
     fileService.readFile('../index.html', (err, data) =>{
         if(err) sendResponse(res, 'text', 404, 'FILE NOT FOUND');

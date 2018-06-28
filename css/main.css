@@ -45,12 +45,13 @@
 }
 
 .center-text-square{
-    padding-top: 37%;
+    padding-top: 38%;
     height: 100%;
     text-align: center;
 }
 
 .square{
+    background-color: #64b5f6;
     position: relative;
     height: 250px;
     width: 250px;
@@ -91,7 +92,7 @@
 
 .header-img{
     height: 100%;
-    background-color: dodgerblue;
+    background-color: #64b5f6;
     background-size: cover;
     background-position: center center;
 }
