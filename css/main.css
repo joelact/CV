@@ -44,10 +44,17 @@
     color: white;
 }
 
+.center-text-square{
+    padding-top: 37%;
+    height: 100%;
+    text-align: center;
+}
+
 .square{
     position: relative;
     height: 250px;
     width: 250px;
+    border-radius: 50%;
 }
 
 @media (max-width: 576px){

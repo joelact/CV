@@ -3,7 +3,7 @@ const year_course = 2;
 
 
 const biography_text = 'Hi, my name is Joel Teixeira and I\'m ' + age + ' years old. I always liked computers, that why a choose to study Computer Science, I\'m currently in the '
-+ year_course + 'nd year of the course.';
++ year_course + 'nd year of college.';
 const email = 'joelact13@outlook.pt';
 const schools = ['Agrupamento de Escolas do Castelo da Maia - AECM',
     'Instituto Superior de Engenharia do Porto'];
