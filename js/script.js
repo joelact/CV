@@ -25,6 +25,7 @@ window.onload = function initialize() {
     }
     addEducationData();
     addHobbies();
+    addProjects();
 };
 
 function addItemsToNav() {
@@ -84,4 +85,31 @@ function addHobbies() {
     html += '</ul>';
 
     document.getElementById('listHobbies').innerHTML = html;
+}
+
+function addProjects() {
+
+    const server = new XMLHttpRequest();
+    server.open('GET', 'https://api.github.com/users/joelact/repos', true);
+    server.send();
+
+    server.onload = function () {
+        let html = '';
+        
+        const repos = JSON.parse(server.response);
+        repos.forEach(element => {
+            html += `<div class="col-lg-6 col-md-6 col-sm-12 mt-2 flex-column">
+            <div class="mx-auto project-box">`;
+            html += `
+            <div class="m-3">
+                <h1><a id="no-link" href="${element.html_url}">${element.name}</a></h1>
+                <br>
+                <h6>${element.language}</h6>
+            </div>
+            `;
+            html += '</div></div>';
+        });       
+
+        document.getElementById('githubProjects').innerHTML = html;
+    };
 }
