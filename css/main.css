@@ -44,8 +44,39 @@
     color: white;
 }
 
-#no-link{
+#box{
     text-decoration: none;
+    color: #64b5f6;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out, transform 0.2s;
+}
+
+#box h1{
+    width: 100%;
+    height: 100%;
+}
+
+#max{
+    width: 100%;
+    height: 100%;
+}
+
+#box a{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #64b5f6;
+    transition: color .15s ease-in-out;
+}
+
+#box a:hover{
+    color: white;
+}
+
+
+#box:hover{
+    transform: scale(1.05);
+    color: white;
+    background-color: #64b5f6;
 }
 
 .project-box{
@@ -114,6 +145,11 @@
     background-size: cover;
     background-position: center;
     background-color:#131313;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
 }
 
 body, html{

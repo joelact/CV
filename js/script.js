@@ -98,13 +98,13 @@ function addProjects() {
         
         const repos = JSON.parse(server.response);
         repos.forEach(element => {
-            html += `<div class="col-lg-6 col-md-6 col-sm-12 mt-2 flex-column">
+            html += `<div class="col-lg-6 col-md-6 col-sm-12 mt-2 flex-column" id="box">
             <div class="mx-auto project-box">`;
             html += `
-            <div class="m-3">
-                <h1><a id="no-link" href="${element.html_url}">${element.name}</a></h1>
-                <br>
-                <h6>${element.language}</h6>
+            <div class="mt-3 ml-3" id="max">
+                <h1><a href="${element.html_url}">${element.name}<br><br>
+                <h6>${element.language}</h6></a></h1>
+                
             </div>
             `;
             html += '</div></div>';
