@@ -12,6 +12,8 @@ const hobbies = ['Soccer/Football', 'Go out with friends', 'Listen to music', 'P
 const navIds = ['aboutMe', 'skills', 'edu', 'hobbies', 'projects'];
 const navItems = ['About me', 'Skills', 'Education', 'Hobbies', 'Projects'];
 
+const skills = ['Java', 'C', 'Javascript', 'Python', 'HTLM', 'CSS', 'Node.js', 'GWT'];
+
 
 const years = [2016, 2019];
 
@@ -23,6 +25,7 @@ window.onload = function initialize() {
     } catch (err) {
         alert('Illegal Argument');
     }
+    addSkills();
     addEducationData();
     addHobbies();
     addProjects();
@@ -46,6 +49,21 @@ function addItemsToNav() {
     html += '</u>';
 
     document.getElementById('myCont').innerHTML = html;
+}
+
+function addSkills(){
+
+    let html = '';
+
+    skills.forEach(element =>{
+        html += `<div class="col-lg-3 col-md-6 col-sm-12 mt-2 flex-column">
+                    <div class="square mx-auto">
+                        <h2 class="center-text-square">${element}</h2>    
+                    </div>
+                </div>`;
+    });
+
+    document.getElementById('skill').innerHTML = html;
 }
 
 function addEducationData() {
